@@ -1,0 +1,122 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  height: 700px;
+  width: 350px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+}
+
+.close {
+  position: relative;
+  width: 95%;
+  height: 30px;
+}
+.ratingInner {
+  width: 95%;
+  height: 100%;
+  overflow-y: auto;
+}
+.closeBtn {
+  top: 8px;
+  position: absolute;
+}
+.ratingSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 160px;
+  border-bottom: 1px dotted;
+}
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 4px;
+}
+.subTitle {
+  font-size: 14px;
+  padding: 4px;
+}
+.stars {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4px;
+  padding: 4px;
+}
+.star {
+  size: 30px;
+  cursor: pointer;
+}
+.recommendOpt {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+.recommendation {
+  width: 60%;
+}
+.recommendOpt > p {
+  margin-left: 10px;
+}
+
+.praiseOpt {
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #f5f3f0;
+  cursor: pointer;
+}
+.praiseOptContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.praiseOptSelected {
+  background-color: #A1E6B8;
+}
+.praiseOpt > p {
+  font-size: 14px;
+}
+.yesNoIcon {
+  cursor: pointer;
+}
+
+.submitButton {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+.submitButton > button {
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #6bb383;
+  border: none;
+  width: 70%;
+  height: 40px;
+}
+.submitButton > button:hover {
+  background-color: #1fb651;
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        height: 100%;
+        width: 100%;
+      }
+}
